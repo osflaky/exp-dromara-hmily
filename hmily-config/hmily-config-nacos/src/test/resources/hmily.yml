@@ -1,0 +1,15 @@
+hmily:
+  server:
+    configMode: nacos
+    appName: xiaoyu
+  #  如果server.configMode eq local 的时候才会读取到这里的配置信息.
+
+remote:
+  nacos:
+    server: 192.168.3.22:8848
+    dataId: common-mongo.properties
+    group: DEFAULT_GROUP
+    timeoutMs: 6000
+    fileExtension: yml
+    passive: true
+
